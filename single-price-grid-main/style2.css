@@ -1,0 +1,127 @@
+:root {
+    /* primary colors */
+    --light-cyan: hsl(179,47%,52%);
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    /* neutral colors */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    /* footer color */
+    --dark-blue: color: hsl(228, 45%, 44%); 
+    /* typography */
+    --fw-400: 400;
+    --fw-700: 700;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--light-gray);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    font-family: 'Karla', sans-serif;
+    max-width: 610px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+.box{
+    padding: 1.5rem;
+}
+.community_box{
+    background: white;
+    grid-column: span 2;
+}
+.community_box h1{
+    color: var(--cyan);
+    font-weight: var(--fw-400);
+}
+.community_box h2{
+    color: var(--yellow);
+    font-weight: var(--fw-400);
+}
+.community_box p{
+    color: var(--grayish-blue);
+}
+.subscription_box{
+    background: var(--cyan);
+}
+.subscription_box h2{
+    color: white;
+}
+.price{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.price_number{
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    color: white;
+}
+.price_month{
+    color: var(--light-cyan);
+}
+.full_access{
+    color: white;
+}
+button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: var(--yellow);
+    color: var(--light-gray);
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background: var(--light-gray);
+    color: var(--yellow);
+}
+button:active{
+    transform: scale(.96);
+}
+button:focus-visible{
+    outline: solid white;
+}
+.why_box{
+    background: var(--light-cyan);
+}
+.why_box h2{
+    color: white;
+    font-size: 1rem;
+}
+ul{
+    list-style: none;
+    color: var(--light-gray);
+}
+h1, h2, p, button{
+    line-height: 1.7em;
+}
+footer p{
+    font-size: 0.688rem; 
+    text-align: center;
+    color: var(--dark-blue);
+    }
+@media only screen and (max-width: 560px) {
+    .container{
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    }
+    .community_box{
+        grid-column: span 1;
+    }
+}
+
