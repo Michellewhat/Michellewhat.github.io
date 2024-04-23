@@ -18,23 +18,22 @@
     box-sizing: border-box;
 }
 body{
+    height: 100vh;
     background: var(--light-gray);
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
 }
-.container{
+main{
     background-color:var(--white);
-    width: 300px;
-    margin: 2rem;
-    padding: 0.1rem;
-    border-radius: 1rem;
+    max-width: 300px;
+    border-radius: 2rem;
     padding-bottom: 2rem;
 }
 img{
     max-width: 100%;
-    padding: 18px;
+    padding: 1rem;
     border-radius: 2rem;
 }
 h2{
