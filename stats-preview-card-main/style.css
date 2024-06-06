@@ -81,14 +81,15 @@ p{
 .list-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
 }
-ul{
+li{
     font-size: var(--fs-m);
     color: var(--Slightly-more-transparent-white);
     font-family: 'LexendDeca';
     font-weight: var(--fw-400);
 }
-ul span{
+li span{
     font-size: var(--fs-l);
     color: var(--White);
 }
