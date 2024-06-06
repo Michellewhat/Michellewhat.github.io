@@ -61,17 +61,15 @@ body{
     color: white;
 }
 .price{
+    color: var(--light-cyan);
     display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 .price_number{
-    font-size: 2rem;
-    font-weight: var(--fw-700);
     color: white;
-}
-.price_month{
-    color: var(--light-cyan);
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-right: 0.5em;
 }
 .full_access{
     color: white;
