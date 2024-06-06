@@ -93,7 +93,7 @@ button:focus-visible{
 .subscription_box-left{
     display: flex;
     text-align: left;
-    span{
+    div{
         padding: 0 0 0 0.5em;
     }
     h2{
