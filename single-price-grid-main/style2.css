@@ -62,7 +62,7 @@ body{
 }
 .price{
     display: inline-flex;
-    color: yellow;
+    color: var(--light-cyan);
 }
 .price_number{
     color: white;
