@@ -61,8 +61,8 @@ body{
     color: white;
 }
 .price{
-    color: var(--light-cyan);
     display: inline-flex;
+    color: var(--light-cyan);
 }
 .price_number{
     color: white;
