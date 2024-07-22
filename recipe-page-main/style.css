@@ -54,7 +54,7 @@ p,h1,h2{
 
 /*General Style*/
 body{
-    background: var(--Light-Grey);
+    background: var(--Eggshell);
     display: flex;
     flex-direction: column;
     align-items: center;
