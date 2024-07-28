@@ -1,0 +1,141 @@
+:root{
+
+/*Primary Colors*/
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/*Neutral Colors*/
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/*Font Weights*/
+--fw-200: 200;
+--fw-400: 400;
+--fw-600: 600;
+}
+
+/*Manual CSS Reset*/
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  html,body{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+p,h1,h2{
+    overflow-wrap: break-word;
+}
+
+/*Accessibility*/
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+}
+
+/*General Style*/
+body{
+    font-family: "Poppins";
+    text-align: center;
+}
+
+/*Main Section*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875em;
+
+}
+.innercontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875em;
+}
+.card{
+    width: 21.875em;
+    padding: 2rem;
+    background: var(--Very-Light-Gray);
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0 0.313em 2em var(--Grayish-Blue);
+}
+.card1{
+    border-top: solid 4px var(--Cyan);
+}
+.card2{
+    border-top: solid 4px var(--Red);
+}
+.card3{
+    border-top: solid 4px var(--Orange);
+}
+.card4{
+    border-top: solid 4px var(--Blue);
+}
+h1{
+    font-size: 2rem;
+    font-weight: var(--fw-200);
+    margin-top: 6.125em;
+}
+b{
+    font-size: 2rem;
+    font-weight: var(--fw-600);
+    color: var(--Very-Dark-Blue);
+}
+h2{
+    font-size: 1.5rem;
+    color: var(--Very-Dark-Blue);
+}
+p{
+    font-size: 1rem;
+    font-weight: var(--fw-400);
+    color: var(--Grayish-Blue);
+}
+img{
+    display: block;
+    margin-left: auto;
+}
+.summary{
+    margin-bottom: 4.063em;
+}
+
+/*Footer Section*/
+footer{
+    margin-top: 1em;
+}
+a{
+    color: var(--Orange);
+}
+a:focus-visible{
+    outline:  solid var(--Cyan);
+}
+
+@media screen and (max-width: 1375px){
+    h1{
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:375px) {
+    main{
+        margin: 2em;
+    }
+    .summary{
+        margin-bottom: 4.688em;
+    }
+}
